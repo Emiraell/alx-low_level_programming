@@ -7,11 +7,5 @@
  */
 int _isupper(int c)
 {
-	int c;
-
-	for (c = 'A'; c <= 'Z'; c++)
-	{
-		_putchar("%d\n", c)
-	}
-	return (c);
+	return (c >= 'A' && c <= 'Z');
 }
