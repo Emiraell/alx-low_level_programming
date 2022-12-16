@@ -7,29 +7,29 @@
  */
 int main(void)
 {
-	int do;
+	int me;
 
-	for (do = 1; do <= 100; do++)
+	for (me = 1; me <= 100; me++)
 	{
-		if (do % 3 == 0 && do % 5 != 0)
+		if (me % 3 == 0 && me % 5 != 0)
 		{
 			printf(" Fizz");
 		}
-		else if (do % 5 == 0 && do % 3 != 0)
+		else if (me % 5 == 0 && me % 3 != 0)
 		{
 			printf(" Buzz");
 		}
-		else if (do % 3 == 0 && do % 5 == 0)
+		else if (me % 3 == 0 && me % 5 == 0)
 		{
 			printf(" FizzBuzz");
 		}
-		else if (do == 1)
+		else if (me == 1)
 		{
-			printf("%d", do);
+			printf("%d", me);
 		}
 		else
 		{
-			printf(" %d", do);
+			printf(" %d", me);
 		}
 	}
 	printf("\n");
