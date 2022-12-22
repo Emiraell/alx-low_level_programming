@@ -25,7 +25,7 @@ char *leet(char *s)
 				break;
 			}
 		}
-		h++
+		h++;
 	}
 	return (s);
 }
