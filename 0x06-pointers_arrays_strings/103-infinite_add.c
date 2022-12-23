@@ -12,44 +12,37 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int a1 = 0, a2 = 0, po, gb, rd1, rd2, add = 0;
+	int i, j, k, l, m, n;
 
-	while (*(n1 + a1) != '\0')
-		a1++;
-	while (*(n2 + a2) != '\0')
-		a++;
-	if (a1 >= a2)
-		gb = a1;
-	else
-		gb = a2;
-	if (size_r <= gb + 1)
+	for (i = 0; n1[i]; i++)
+		;
+	if (j = 0; n2[j]; j++)
+		;
+	if (i > size_r || j > size_r)
 		return (0);
-	r[gb + 1] = '\0';
-	a1--, a2--, size_r--;
-	rd1 = *(n1 + a1) - 48, rd2 = *(n2 + a2) - 48;
-	while (gb >= 0)
+	m = 0;
+	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
 	{
-		po = rd1 + rd2 + add;
-		if (po >= 10)
-			add = po / 10;
-		else
-			add = 0;
-		if (po > 0)
-			*(r + gb) = (po % 10) + 48;
-		else
-			*(r + gb) = '0';
-		if (a1 > 0)
-			a1--, rd1 = *(n1 + a1) - 48;
-		else
-			rd1 = 0;
-		if (a2 > 0)
-			a2--, rd2 = *(n2 + a2) - 48;
-		else
-			rd2 = 0;
-		gb--, size_r--;
+		n = m;
+		if (i >= 0)
+			n += n1[i] - '0';
+		if (j >= 0)
+			n += n2[j] - '0';
+		if (i < 0 && j < 0 && n == 0)
+		{
+			break;
+		}
+		m = n / 10;
+		r[k] = n % 10 + '0';
 	}
-	if (*(r) == '0')
-		return (r + 1);
-	else
-		return (r);
+	r[k] = '\0';
+	if (i >= 0 || j >= 0 || m)
+		return (0);
+	for (k -= 1, l = 0; l < k; k--, l++)
+	{
+		m = r[k];
+		r[k] = r[l];
+		r[l] = m;
+	}
+	return (r);
 }
