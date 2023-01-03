@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_diagsums - print the sum of two diagonal
@@ -21,5 +20,5 @@ void print_diagsums(int *a, int size)
 		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
 			si2 += a[i];
 	}
-	print("%d, %d\n", si1, si2);
+	printf("%d, %d\n", si1, si2);
 }
