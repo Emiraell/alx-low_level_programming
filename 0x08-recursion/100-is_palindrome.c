@@ -29,7 +29,7 @@ int compare(char *s, int no, int nu)
 	{
 		if (no == nu || no == nu + 1)
 			return (1);
-		return (0 + compare(s, no + 1, nu - 2));
+		return (0 + compare(s, no + 1, nu - 1));
 	}
 	return (0);
 }
