@@ -9,21 +9,21 @@
  * Return: On succes 0.
  */
 
-int main(int argc, int argv[])
+int main(int argc, int *argv[])
 {
-	int h, k, add = 0;
+	int i, j, add = 0;
 
-	for (h = 1; h < argc; h++)
+	for (i = 1; i < argc; i++)
 	{
-		for (k = 0; argv[h][k] != '\0'; k++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!isdigit(argv[h][k]))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		add += atoi(argv[h]);
+		add += atoi(argv[i]);
 	}
 	printf("%d\n", add);
 	return (0);
