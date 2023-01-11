@@ -1,13 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * myname - To printits name
+ * main - To print its name
  * @argc: number of command line
  * @argv: arrays contain in command line arguement
- * Return: 0n succes return 0
+ * Return: On success  0.
  */
 
-int myname(int argc __attribute__((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	_putchar("%s\n", argv[0]);
 	return (0);
