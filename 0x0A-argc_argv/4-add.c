@@ -9,7 +9,7 @@
  * Return: On succes 0.
  */
 
-int main(int argc, int *argv[])
+int main(int argc, int argv[])
 {
 	int h, k, add = 0;
 
