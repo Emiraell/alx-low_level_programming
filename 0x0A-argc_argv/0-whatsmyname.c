@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - To print its name
@@ -9,6 +9,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	_putchar("%s\n", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }

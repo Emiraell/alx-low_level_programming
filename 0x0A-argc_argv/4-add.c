@@ -3,10 +3,10 @@
 #include <ctype.h>
 
 /**
- * main - adds positive numbers.
+ * main - adds positive numbers
  * @argc: command line arguements
  * @argv: arrays on command line arguement
- * Return: always 0.
+ * Return: On succes 0.
  */
 
 int main(int argc, int *argv[])
