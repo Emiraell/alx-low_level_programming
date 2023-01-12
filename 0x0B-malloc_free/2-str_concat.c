@@ -10,11 +10,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
-	unsigned int i = 0;
-
-
-	lent = 0;
-	lentt = 0;
+	unsigned int mal = 0, loc = 0, lent = 0, lentt = 0;
 
 	while (s1 && s1[lent])
 		lent++;
@@ -25,12 +21,13 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	mal = 0, loc = 0;
+
 	if (s1)
 	{
 		while (mal < lent)
 		{
 			str[mal] = s1[mal];
-			mal++
+			mal++;
 		}
 		if (s2)
 		{
