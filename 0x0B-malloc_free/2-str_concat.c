@@ -29,14 +29,16 @@ char *str_concat(char *s1, char *s2)
 			str[mal] = s1[mal];
 			mal++;
 		}
+	}
 		if (s2)
 		{
 			while (mal < (lent + lentt))
+			{
 				str[mal] = s2[loc];
 			mal++;
 			loc++;
+			}
 		}
-	}
-	str[mal] = '\0';
-	return (str);
+		str[mal] = '\0';
+		return (str);
 }
