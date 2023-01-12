@@ -37,7 +37,7 @@ char **strtow(char *str)
 	char **matrix, *tmp;
 	int a, b = 0, lent = 0, word, c = 0, start, end;
 
-	while (*(str + len))
+	while (*(str + lent))
 		lent++;
 	word = count(str);
 	if (word == 0)
