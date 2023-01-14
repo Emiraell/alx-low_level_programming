@@ -2,19 +2,19 @@
 #include <stdlib.h>
 
 /**
- * mem - fills memory with byte
+ * _memset - fills memory with byte
  * @s:input pointer
  * @b: character to fill
  * @n: number of byte
  * Return: A pointer
  */
 
-char *mem(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int m;
+	unsigned int i;
 
-	for (m = 0; m < n; m++)
-		s[m] = b;
+	for (i = 0; i < n; i++)
+		s[i] = b;
 	return (s);
 }
 
@@ -35,6 +35,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc(nmemb * size);
 	if (p == NULL)
 		return (NULL);
-	mem(p, 0, nmemb * size);
+	_memset(p, 0, nmemb * size);
 	return (p);
 }
