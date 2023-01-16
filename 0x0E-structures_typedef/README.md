@@ -1,0 +1,1 @@
+A project on structures, typedef and how to use them
