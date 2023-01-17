@@ -1,0 +1,1 @@
+This a project on how to get famiiar with C languages and also code in C.
