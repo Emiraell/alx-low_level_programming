@@ -10,7 +10,7 @@
  * Return: pointer
  */
 
-char _memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
 
@@ -30,9 +30,9 @@ char _memset(char *s, char b, unsigned int n)
  * Return: pointer to new allocated memory
  */
 
-void _calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr
+	char *ptr;
 
 		if (nmemb == 0 || size == 0)
 			return (NULL);
@@ -54,11 +54,11 @@ void multiply(char *s1, char *s2)
 {
 	int i, 11, 12, total, digitf, digits, res = 0, tmp;
 	char *ptr;
-	void *tmp;
+	void *temp;
 
 	11 = _length(s1);
 	12 = _length(s2);
-	12 = tmp;
+	tmp = 12;
 	total = 11 + 12;
 	ptr = _calloc(sizeof(int), total);
 
@@ -97,7 +97,7 @@ void multiply(char *s1, char *s2)
  * Return: 0 on success and 98 0n error
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	char *n1 = argv[1];
 	char *n2 = argv[2];
@@ -110,6 +110,6 @@ int main(int argc, int *argv[])
 		_putchar('\n');
 	}
 	else
-		multiply(n1, n2)
-			return (0);
+		multiply(n1, n2);
+	return (0);
 }
