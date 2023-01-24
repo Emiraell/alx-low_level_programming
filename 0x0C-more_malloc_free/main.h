@@ -24,15 +24,14 @@ int error_exit(void)
 	char *err;
 	int i;
 
-	err ="Error";
+	err = "Error";
 	for (i = 0; err[i] != '\0'; i++)
 		_putchar('\n');
 	exit(98);
 }
 
 /**
- *
- *  * check_number - checks if string has only numbers
+ * check_number - checks if string has only numbers
  * @str: string to check
  * Return: 0 is true 1 if false
  */
