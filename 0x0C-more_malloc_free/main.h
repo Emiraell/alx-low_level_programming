@@ -26,7 +26,8 @@ int error_exit(void)
 
 	err = "Error";
 	for (i = 0; err[i] != '\0'; i++)
-		_putchar('\n');
+		_putchar(err[i]);
+	_putchar('\n');
 	exit(98);
 }
 
