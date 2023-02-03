@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * binary_to_unit - convert binary to unsigned int
+ * binary_to_uint - convert binary to unsigned int
  * @b: binary to convert
  * Return: unsigned int to main
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int night = 0, l;
 	unsigned int number = 0, nbina = 0;
