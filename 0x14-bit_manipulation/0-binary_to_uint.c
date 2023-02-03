@@ -21,7 +21,7 @@ unsigned int binary_to_unit(const char *b)
 	while (b[l])
 	{
 		if ((b[l] != '0') && (b[l] != '1'))
-			return (nbia);
+			return (nbina);
 		if (b[l] == '1')
 			number += (1 * (1 << night));
 		l++;
